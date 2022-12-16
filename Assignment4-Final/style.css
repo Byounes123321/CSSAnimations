@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Trispace:wght@600&display=swap');
+
+html {
+    color: white;
+    background-image: url(./images/background.webp);
+    font-size: 16px;
+    font-family: "Comic Sans";
+}
+
+.title {
+    font-family: "Trispace";
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 2em;
+}
+
+.topNav {
+    /* border: 1px solid green; */
+}
+
+.nav {
+    font-family: "Trispace";
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+.nav li {
+    display: block;
+    width: auto;
+    float: left;
+    margin-left: 2em;
+    border: 1px solid white;
+}
+
+.nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+    animation-delay: 1s;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    scale: 1.2;
+    transition: 1s;
+
+
+}
+
+@keyframes nav {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+        scale: 1.3;
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+        scale: 1.2;
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+
+.flexcontainer {
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    margin-right: 25px;
+}
+
+.gameinfo {
+    width: 80%;
+    margin-left: 25px;
+    /* padding: 10px; */
+    background-image: url(./images/background.webp);
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    text-align: center;
+    /* border: 1px solid green; */
+}
+
+.gameinfo div {
+    padding: 15px;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.gameinfo p {
+    font-size: 16.5px;
+}
+
+.aside {
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0);
+    width: 20%;
+    padding: 10px;
+    border: 3px solid white;
+}
+
+.aside div {
+    background-color: black;
+    font-family: "Trispace";
+    margin-bottom: 10px;
+}
+
+.copy {
+    margin: 25px;
+}
+
+.animation {
+    /* background-image: url(./images/background.webp); */
+    height: 500px;
+    margin: 25px;
+    border: 1px solid white;
+    overflow: hidden;
+    cursor: none;
+}
+
+#earth {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    animation-name: earth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes earth {
+    0% {}
+
+    50% {
+        scale: 1.3;
+    }
+
+    100% {}
+}
+
+
+#moon {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    animation-name: moon;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moon {
+
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+#sun {
+
+    position: relative;
+    left: 70%;
+    width: 10%;
+    animation-name: sun;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sun {
+    0% {}
+
+    50% {
+        scale: 1.5;
+    }
+
+    100% {}
+}
+
+#ufo {
+    position: relative;
+    width: 10%;
+    top: -400px;
+    left: -20px;
+    /* overflow: hidden; */
+    transition: 0.2s;
+}
