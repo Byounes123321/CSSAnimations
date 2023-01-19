@@ -1,2 +1,2 @@
 # CSSAnimations
-Creating animations in CSS
+Creating full page animations in CSS
